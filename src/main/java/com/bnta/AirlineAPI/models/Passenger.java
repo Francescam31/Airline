@@ -31,6 +31,10 @@ public class Passenger {
     }
     public Passenger(){}
 
+    public void addFlight(Flight flight){
+        this.flights.add(flight);
+    }
+
 //    Getters & Setters
     public Long getId() {
         return id;

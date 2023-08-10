@@ -30,8 +30,9 @@ public class DataLoader implements ApplicationRunner {
         flightRepository.save(flight1);
 
         Passenger passenger1 = new Passenger("Francesca", "f@gmail.com");
+        passenger1.addFlight(flight1);
         passengerRepository.save(passenger1);
-        Passenger passenger2 = new Passenger("Emily", "e@gmail.com");
+        Passenger passenger2 = new Passenger("Eloise", "e@gmail.com");
         passengerRepository.save(passenger2);
 
 //        Flight2
@@ -39,6 +40,7 @@ public class DataLoader implements ApplicationRunner {
         flightRepository.save(flight2);
 
         Passenger passenger3 = new Passenger("Ian", "i@gmail.com");
+        passenger3.addFlight(flight2);
         passengerRepository.save(passenger3);
 
 
